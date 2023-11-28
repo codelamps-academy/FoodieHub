@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FoodieHub</string>
+    <string name="foodiehub">FoodieHub</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="continue_with">Continue With</string>
+    <string name="or">Or</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
 </resources>
