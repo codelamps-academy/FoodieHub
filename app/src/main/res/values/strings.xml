@@ -6,4 +6,6 @@
     <string name="or">Or</string>
     <string name="facebook">Facebook</string>
     <string name="google">Google</string>
+    <string name="design">Design By Codelamps\n Andre Rizaldi Brillianto</string>
+    <string name="validation_location">To provide you with the best dining experience,\nwe need your permission to access your\ndevice\'s location. By enabling location services,\nwe can offer personalized restaurant\n recommendations, accurate delivery estimates,\nand ensure a seamless food delivery\nexperience</string>
 </resources>

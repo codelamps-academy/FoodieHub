@@ -6,4 +6,159 @@
     android:layout_height="match_parent"
     tools:context=".SignUpActivity">
 
+    <ImageView
+        android:id="@+id/logo_signup"
+        android:layout_width="129dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/g10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/foodiehub_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="FoodieHub"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@id/logo_signup"
+        app:layout_constraintStart_toStartOf="@id/logo_signup"
+        app:layout_constraintTop_toBottomOf="@id/logo_signup" />
+
+    <TextView
+        android:id="@+id/create_your_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Create Your Account"
+        android:textColor="@color/maroon"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/foodiehub_signup"
+        app:layout_constraintStart_toStartOf="@id/foodiehub_signup"
+        app:layout_constraintTop_toBottomOf="@id/foodiehub_signup" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="@id/create_your_account"
+        app:layout_constraintStart_toStartOf="@id/create_your_account"
+        app:layout_constraintTop_toBottomOf="@id/create_your_account">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="@id/outUsername"
+        app:layout_constraintStart_toStartOf="@id/outUsername"
+        app:layout_constraintTop_toBottomOf="@id/outUsername">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Email atau Nomor Telepon" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="@id/outEmail"
+        app:layout_constraintStart_toStartOf="@id/outEmail"
+        app:layout_constraintTop_toBottomOf="@id/outEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Masukkan Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/or_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Or"
+        app:layout_constraintEnd_toEndOf="@id/outPassword"
+        app:layout_constraintStart_toStartOf="@id/outPassword"
+        app:layout_constraintTop_toBottomOf="@id/outPassword" />
+
+    <TextView
+        android:id="@+id/signup_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="SignUp With"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/or_signup"
+        app:layout_constraintStart_toStartOf="@id/or_signup"
+        app:layout_constraintTop_toBottomOf="@id/or_signup" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/facebook"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/white_button"
+        android:drawableLeft="@drawable/facebook_3_1"
+        android:paddingLeft="15dp"
+        android:text="Facebook"
+        app:layout_constraintEnd_toStartOf="@+id/google"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_with" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/google"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/white_button"
+        android:drawableLeft="@drawable/google_icon_1"
+        android:paddingLeft="15dp"
+        android:text="Google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/facebook"
+        app:layout_constraintTop_toBottomOf="@id/signup_with" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:text="SignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebook"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/maroon_button"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup"
+        android:text="@string/design"
+        android:layout_marginTop="10dp"/>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
