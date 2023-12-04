@@ -108,10 +108,10 @@
         android:id="@+id/facebook"
         android:layout_width="152dp"
         android:layout_height="57dp"
-        android:background="@drawable/white_button"
         android:layout_marginTop="20dp"
-        android:paddingLeft="15dp"
+        android:background="@drawable/white_button"
         android:drawableLeft="@drawable/facebook_3_1"
+        android:paddingLeft="15dp"
         android:text="@string/facebook"
         app:layout_constraintEnd_toStartOf="@+id/google"
         app:layout_constraintHorizontal_bias="0.5"
@@ -123,10 +123,10 @@
         android:layout_width="152dp"
         android:layout_height="57dp"
         android:layout_marginTop="20dp"
-        android:drawableLeft="@drawable/google_icon_1"
-        android:text="@string/google"
-        android:paddingLeft="15dp"
         android:background="@drawable/white_button"
+        android:drawableLeft="@drawable/google_icon_1"
+        android:paddingLeft="15dp"
+        android:text="@string/google"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -135,24 +135,24 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
-        android:background="@drawable/maroon_button"
-        android:textColor="@color/white"
         android:layout_width="152dp"
         android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/maroon_button"
         android:text="Login"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/facebook"
-        android:layout_marginTop="25dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facebook" />
 
     <TextView
         android:id="@+id/dont_have_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Don't Have Account?"
-        app:layout_constraintStart_toStartOf="@id/login"
         app:layout_constraintEnd_toEndOf="@id/login"
-        app:layout_constraintTop_toBottomOf="@id/login"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintTop_toBottomOf="@id/login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

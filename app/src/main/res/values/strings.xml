@@ -8,4 +8,7 @@
     <string name="google">Google</string>
     <string name="design">Design By Codelamps\n Andre Rizaldi Brillianto</string>
     <string name="validation_location">To provide you with the best dining experience,\nwe need your permission to access your\ndevice\'s location. By enabling location services,\nwe can offer personalized restaurant\n recommendations, accurate delivery estimates,\nand ensure a seamless food delivery\nexperience</string>
+    <string name="explore_your_favorite_food">Explore Your Favorite Food</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
