@@ -88,6 +88,7 @@
                 app:layout_constraintTop_toTopOf="@id/count_cart" />
 
             <ImageButton
+                android:id="@+id/delete_cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_restore_from_trash_24"
